@@ -9,8 +9,8 @@ import (
 
 	"github.com/shirou/gopsutil/disk"
 
-	"github.com/AstromechZA/spoon/conf"
-	"github.com/AstromechZA/spoon/sink"
+	"github.com/astromechza/spoon-oci/conf"
+	"github.com/astromechza/spoon-oci/sink"
 )
 
 type diskAgent struct {

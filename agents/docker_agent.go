@@ -14,8 +14,8 @@ import (
 	"github.com/docker/docker/api/types/filters"
 	"github.com/docker/docker/client"
 
-	"github.com/AstromechZA/spoon/conf"
-	"github.com/AstromechZA/spoon/sink"
+	"github.com/astromechza/spoon-oci/conf"
+	"github.com/astromechza/spoon-oci/sink"
 )
 
 type dockerAgent struct {

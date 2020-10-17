@@ -10,10 +10,10 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/AstromechZA/spoon/agents"
-	"github.com/AstromechZA/spoon/conf"
-	"github.com/AstromechZA/spoon/constants"
-	"github.com/AstromechZA/spoon/sink"
+	"github.com/astromechza/spoon-oci/agents"
+	"github.com/astromechza/spoon-oci/conf"
+	"github.com/astromechza/spoon-oci/constants"
+	"github.com/astromechza/spoon-oci/sink"
 )
 
 const usageString = `Spoon is a simple metric gatherer for Linux systems. Like the popular Diamond
@@ -27,10 +27,9 @@ Spoon does not require root permissions to run, but might need them depending on
 which agents are configured.
 `
 
-// SpoonVersion is the version string
 // format should be 'X.YZ'
 // Set this at build time using the -ldflags="-X main.SpoonVersion=X.YZ"
-var SpoonVersion = "<unofficial build>"
+var version = "<unofficial build>"
 
 func mainInner() error {
 
@@ -51,9 +50,9 @@ func mainInner() error {
 
 	// first do arg checking
 	if *versionFlag {
-		fmt.Println("Spoon Version " + SpoonVersion)
+		fmt.Println("Spoon Version " + version)
 		fmt.Println(constants.SpoonImage)
-		fmt.Println("Project: https://github.com/AstromechZA/spoon")
+		fmt.Println("Project: https://github.com/astromechza/spoon-oci")
 		return nil
 	}
 

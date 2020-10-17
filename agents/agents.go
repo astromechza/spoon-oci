@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/AstromechZA/spoon/conf"
-	"github.com/AstromechZA/spoon/sink"
+	"github.com/astromechza/spoon-oci/conf"
+	"github.com/astromechza/spoon-oci/sink"
 )
 
 // The Agent type is an object that can gather and return a result.

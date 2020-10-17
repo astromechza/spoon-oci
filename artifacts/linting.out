@@ -1,0 +1,21 @@
+conf.go:152:6: S1002: should omit comparison to bool constant, can be simplified to `!m` (gosimple)
+		if m == false {
+		   ^
+conf.go:148:13: SA6000: calling regexp.MatchString in a loop has poor performance, consider using regexp.Compile (staticcheck)
+		m, err := regexp.MatchString(constants.ValidAgentPathRegexStrict, c.Path)
+		          ^
+agents/disk_agent.go:19:2: `settings` is unused (structcheck)
+	settings map[string]string
+	^
+agents/disk_agent.go:51:60: S1002: should omit comparison to bool constant, can be simplified to `!m` (gosimple)
+			if m, _ := regexp.MatchString(a.DeviceRegex, p.Device); m == false {
+			                                                        ^
+agents/disk_agent.go:84:62: S1002: should omit comparison to bool constant, can be simplified to `!m` (gosimple)
+			if m, _ := regexp.MatchString(a.DeviceRegex, deviceName); m == false {
+			                                                          ^
+agents/cmd_agent.go:69:13: S1012: should use `time.Since` instead of `time.Now().Sub` (gosimple)
+	elapsed := time.Now().Sub(start)
+	           ^
+agents/docker_agent.go:72:13: S1012: should use `time.Since` instead of `time.Now().Sub` (gosimple)
+		uptime := time.Now().Sub(time.Unix(c.Created, 0))
+		          ^

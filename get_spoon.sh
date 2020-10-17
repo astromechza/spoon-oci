@@ -24,7 +24,7 @@ ARTIFACT="spoon-${PLATFORM}"
 
 # pull latest release json
 echo "Finding latest release.."
-LATEST_RELEASE=$(curl -L -s -H 'Accept: application/json' https://github.com/AstromechZA/spoon/releases/latest)
+LATEST_RELEASE=$(curl -L -s -H 'Accept: application/json' https://github.com/astromechza/spoon-oci/releases/latest)
 
 # isolate tag name
 RELEASE_TAG=$(echo "${LATEST_RELEASE}" | sed -e 's/.*"tag_name":"\([^"]*\)".*/\1/')
@@ -34,4 +34,4 @@ echo "Got ${RELEASE_TAG}"
 echo "Downloading ${ARTIFACT} to ${DESTINATION_DIR}.."
 curl -L \
     -o "${DESTINATION_DIR}/spoon" \
-    "https://github.com/AstromechZA/spoon/releases/download/${RELEASE_TAG}/${ARTIFACT}"
+    "https://github.com/astromechza/spoon-oci/releases/download/${RELEASE_TAG}/${ARTIFACT}"

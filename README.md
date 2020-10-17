@@ -80,7 +80,7 @@ And set up your service definition in `/lib/systemd/system/spoon.service`:
 ```
 [Unit]
 Description=spoon metrics daemon
-Documentation=https://github.com/AstromechZA/spoon
+Documentation=https://github.com/astromechza/spoon-oci
 After=network.target
 
 [Service]

@@ -6,7 +6,7 @@ import (
 	"log"
 
 	"github.com/AstromechZA/go-statsd"
-	"github.com/AstromechZA/spoon/conf"
+	"github.com/astromechza/spoon-oci/conf"
 )
 
 type StatsdSink struct {

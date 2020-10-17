@@ -3,7 +3,7 @@ package sink
 import (
 	"fmt"
 
-	"github.com/AstromechZA/spoon/conf"
+	"github.com/astromechza/spoon-oci/conf"
 )
 
 type Metric struct {

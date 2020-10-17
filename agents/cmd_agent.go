@@ -12,9 +12,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/AstromechZA/spoon/conf"
-	"github.com/AstromechZA/spoon/constants"
-	"github.com/AstromechZA/spoon/sink"
+	"github.com/astromechza/spoon-oci/conf"
+	"github.com/astromechza/spoon-oci/constants"
+	"github.com/astromechza/spoon-oci/sink"
 	"golang.org/x/net/context"
 )
 
